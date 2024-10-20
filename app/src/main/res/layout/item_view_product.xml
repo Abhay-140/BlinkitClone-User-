@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2.60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:id="@+id/cvProduct"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="13dp"
+        android:elevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        android:background="@drawable/bg_stroke"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="13dp"
+            android:orientation="vertical">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:layout_width="wrap_content"
+                android:layout_height="156dp"
+                android:id="@+id/ivImageSlider"
+                app:iss_auto_cycle="false"
+                app:iss_text_align="CENTER"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductTitle"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Nandini Toned Fresh Milk alda a;oie aoie alei aoie a;oina a;oina a;oief gj"
+                android:textColor="@color/black"
+                android:textSize="19.50sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvProductQuality"
+                android:text="500ml"
+                android:textColor="#6F6F6F"
+                android:textSize="15.60sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvProductPrice"
+                        android:text="$25"
+                        android:textColor="@color/black"
+                        android:textSize="15.60sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    
+                    <TextView
+                        android:layout_width="78dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvAdd"
+                        android:text="Add"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:padding="5.20dp"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:background="@drawable/bg_add_button"
+                        android:textSize="14.30sp" />
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/llProductCount"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/bg_product_count"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvDecrementCount"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textSize="19.50sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvProductCount"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="19.50sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvIncrementCount"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            android:textSize="19.50sp"/>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

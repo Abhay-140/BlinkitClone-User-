@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/black"
+        android:background="@color/white_yellow"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Profile"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1.30dp"
+        android:background="#D4D4D4"
+        app:layout_constraintTop_toBottomOf="@+id/tbProfileFragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My account"
+            android:textSize="23.40sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="999999999"
+            android:layout_marginTop="6.50dp"
+            android:textSize="19.50sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR INFORMATION"
+            android:layout_marginTop="19.50dp"
+            android:textSize="15.60sp"
+            android:textColor="#6B6C74" />
+
+        <LinearLayout
+            android:id="@+id/llOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.50dp"
+                android:src="@drawable/baseline_backpack_24"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Your Orders"
+                android:layout_marginStart="13dp"
+                android:textSize="16.90sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/baseline_chevron_right_24"
+                app:tint="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.50dp"
+                android:src="@drawable/baseline_location_city_24"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Address Book"
+                android:layout_marginStart="13dp"
+                android:textSize="16.90sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/baseline_chevron_right_24"
+                app:tint="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.50dp"
+                android:src="@drawable/baseline_backpack_24"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="Log Out"
+                android:layout_marginStart="13dp"
+                android:textSize="16.90sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/baseline_chevron_right_24"
+                app:tint="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
