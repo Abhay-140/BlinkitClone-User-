@@ -29,4 +29,4 @@ Blinkit Clone (user) is an android app in which user can order the grocceries an
 
 # Contributing
 
-We welcome contributions to improve Quiz Mania! If you have suggestions or find bugs, please open an issue or submit a pull request on our GitHub repository.
+We welcome contributions to improve Blinkit Clone (user). If you have suggestions or find bugs, please open an issue or submit a pull request on our GitHub repository.
